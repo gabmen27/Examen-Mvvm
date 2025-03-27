@@ -4,9 +4,10 @@
              x:Class="Examen_Mvvm.View.CalculoProducto"
              xmlns:viewModel="clr-namespace:Examen_Mvvm.ViewModels"
              Title="Caladora">
+    <ScrollView>
     <VerticalStackLayout Padding="20" Spacing="20">
-
-        <Label Text="Producto 1: " FontAttributes="Bold"/> 
+        
+            <Label Text="Producto 1: " FontAttributes="Bold"/> 
         <Entry Text="{Binding Precio1}" Placeholder="Ingrese Precio Producto 1" Keyboard="Numeric"/>
 
         <Label Text="Producto 2: " FontAttributes="Bold"/>
@@ -16,16 +17,21 @@
         <Entry Text="{Binding Precio3}" Placeholder="Ingrese Precio Producto 3" Keyboard="Numeric"/>
 
         <Label Text="Descuento Producto 1: "/>
+        <Entry Text="{Binding TxtDescuento1}" IsReadOnly="True"/>
         <Entry Text="{Binding Descuento1}" IsReadOnly="True"/>
 
         <Label Text="Descuento Producto 2: " />
-        <Entry Text="{Binding Descuento1}" IsReadOnly="True"/>
+        <Entry Text="{Binding TxtDescuento2}" IsReadOnly="True"/>
+        <Entry Text="{Binding Descuento2}" IsReadOnly="True"/>
 
+        
         <Label Text="Descuento Producto 3: "/>
-        <Entry Text="{Binding Descuento1}" IsReadOnly="True"/>
+        <Entry Text="{Binding TxtDescuento3}" IsReadOnly="True"/>
+        <Entry Text="{Binding Descuento3}" IsReadOnly="True"/>
 
         <Button Text="Calcular" Background="Green" Command="{Binding CalcularCommand}" />
         <Button Text="Limpiar" Background="Red" Command="{Binding LimpiarCommand}" />
-        
+     
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
