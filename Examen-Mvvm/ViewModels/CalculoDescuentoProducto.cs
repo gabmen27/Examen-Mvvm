@@ -8,7 +8,7 @@ namespace Examen_Mvvm.ViewModels
     {
         [ObservableProperty]
         private double precio1;
-
+        
 
         [ObservableProperty]
         private double precio2;
