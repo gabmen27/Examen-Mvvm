@@ -15,8 +15,17 @@
         <Label Text="Producto 3: " FontAttributes="Bold"/>
         <Entry Text="{Binding Precio3}" Placeholder="Ingrese Precio Producto 3" Keyboard="Numeric"/>
 
-        <Entry Text="" IsReadOnly="True"/>
+        <Label Text="Descuento Producto 1: "/>
+        <Entry Text="{Binding Descuento1}" IsReadOnly="True"/>
 
+        <Label Text="Descuento Producto 2: " />
+        <Entry Text="{Binding Descuento1}" IsReadOnly="True"/>
 
+        <Label Text="Descuento Producto 3: "/>
+        <Entry Text="{Binding Descuento1}" IsReadOnly="True"/>
+
+        <Button Text="Calcular" Background="Green" Command="{Binding CalcularCommand}" />
+        <Button Text="Limpiar" Background="Red" Command="{Binding LimpiarCommand}" />
+        
     </VerticalStackLayout>
 </ContentPage>
